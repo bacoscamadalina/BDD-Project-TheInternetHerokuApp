@@ -1,29 +1,29 @@
-# BDD Project The Internet-HerokuApp 
+# BDD Project The Internet-HerokuApp 🚀
 
-## Project Structure
+## Project Structure 📂
 
-| Directory/File     | Description                                                             |
-|--------------------|-------------------------------------------------------------------------|
-| **features/**      | Contains `.feature` files with test scenarios in Gherkin syntax.        |
-| **steps/**         | Python files with step definitions for the feature files.               |
-| **pages/**         | Page Object Model (POM) classes with web element selectors and methods. |
-| **driver.py**      | Creates and configures the Selenium WebDriver.                          |
-| **environment.py** | Sets up and tears down tests (`before_all` and `after_all`).            |
-| **behave.ini**     | Configures Behave report formatters (e.g., HTML reports).               |
+| Directory/File     | Description                                                              |
+|--------------------|--------------------------------------------------------------------------|
+| **features/**      | 📄 Contains `.feature` files with test scenarios in Gherkin syntax.      |
+| **steps/**         | 📝Python files with step definitions for the feature files.              |
+| **pages/**         | 🏷️Page Object Model (POM) classes with web element selectors and methods. |
+| **driver.py**      | 🌐Creates and configures the Selenium WebDriver.                         |
+| **environment.py** | ⚙️Sets up and tears down tests (`before_all` and `after_all`).             |
+| **behave.ini**     | 🛠️Configures Behave report formatters (e.g., HTML reports).                |
 
-## Key Files
+## Key Files 🔑
 
 ### `driver.py`
-- Initializes the Selenium WebDriver.
+- 🌍 Initializes the Selenium WebDriver.
 
 ### `environment.py`
-- **`before_all(context)`**: Initializes the WebDriver and page objects.
-- **`after_all(context)`**: Closes the WebDriver.
+- **`before_all(context)`**: 🚦 Initializes the WebDriver and page objects.
+- **`after_all(context)`**: ❌ Closes the WebDriver.
 
 ### `behave.ini`
-- Configures Behave formatters, e.g., HTML reports.
+- 📝 Configures Behave formatters, e.g., HTML reports.
 
-## Running the Project
+## Running the Project ▶️
 
 1. Clone the repository:
    ```bash
@@ -46,7 +46,7 @@
    % behave -f html -o report.html
    ```
 
-## Notes
+## Notes 📌
 - Page Objects: Located in pages/, abstract web elements and interactions.
 - Step Definitions: Implemented in steps/, link to feature file steps.
  
