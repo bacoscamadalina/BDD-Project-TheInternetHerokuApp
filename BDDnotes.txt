@@ -1,0 +1,18 @@
++ features - package (contine fisierele .feature)
++ steps - package (contine fisierele .py cu metodele pasilor)
++ pages - package (contine fisierele .py cu selectori)
+- driver/browser.py : fisier in care se creaza driver-ul cu selenium (from selenium import webdriver)
+- environment.py : implementam cele doua metode
+                  - before_all (context)
+                  - after_all (context)
+                  - context = variabila ce contine driver-ul si paginile de care au nevoie metodele din STEPS
+- behave.ini : contine configuratii pentru libraria behave, in concret tipul de formatare al raportului de executie
+Continutul fisierului :
+[behave.formatters]
+html = behave_html_formatter:HTMLFormatter
+
+Instructiuni pentru rularea proiectului:
+   1. behave -> ruleaza scenariile fara sa genereze un raport de executie (ruleaza toate scenariile )
+   2. behave --tags=shoppingCart -> executa doar scenariile care au acest tag:@shoppingCart (doar scenariile decorate)
+   3. behave -f behave_html_formatter:HTMLFormatter -o behave-report.html -> executa proiectul si genereaza raportul de executie cu formatter-ul specificat
+   4. behave -f html -o raport.html -> executa proiectul si genereaza raportul de executie cu formatter-ul HTML configurat in fisierul behave.ini
